@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#logo{
+  display: block;
+  margin: 3rem auto 2rem;
+  width: 40vw;
+}
+
+section{
+  width: 50vw;
+  height: 100%;
+  background-color: #fff;
+  border: 5px solid #5a5a5a;
+  padding: 1px 10px 10px;
+  margin: 0 auto;
+  border-radius: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color:#F78F1E;
+  margin: 15px 0;
+}
+
+#bottom-section{
+  margin: 10px auto 75px;
+}
+
+#submit {
+  padding: 18px 0;
+  font-size: 2em;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+input, textarea{
+  background-color: #5a5a5a;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 1% 25px 0;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #eee;  
+}
+
+input[type=submit]{
+  border-radius: 5px;
+  padding: 18px 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.hundo {
+  width: 100%;
+  margin-left: 0;
+}
+
+textarea{
+  width: 100%;
+  margin-left: 0;
+  color: #eee;
+}
