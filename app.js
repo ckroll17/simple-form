@@ -1,7 +1,7 @@
-var express = require("express");
-var app = express();
-var port = 3000;
-var bodyParser = require('body-parser');
+const express = require("express");
+const app = express();
+const port = 3000;
+const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/'));
@@ -10,10 +10,20 @@ var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost:27017/node-demo");
 var nameSchema = new mongoose.Schema({
-    firstName: String,
-    lastName: String
+    firstname: '',
+    lastname: '',
+    email: '',
+    street: '',
+    city: '',
+    state: '',
+    zipCode: '',
+    country: '',
+    dept: '',
+    location: '',
+    description: '',
 });
-var User = mongoose.model("User", nameSchema);
+
+const User = mongoose.model("User", nameSchema);
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
